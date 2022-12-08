@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="20dp"
+    android:text="Allama Iqbal"
+    android:id="@+id/poetName"
+    android:textStyle="bold"
+    android:background="#DFDCDC"
+    android:textSize="20sp"
+    android:paddingStart="5dp"
+    android:textColor="@color/black"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:text="@string/samplePoetry"
+        android:paddingLeft="5dp"
+        android:id="@+id/poetryData_tv"
+        android:paddingRight="5dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:background="#DFDCDC"
+        android:gravity="center_vertical"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:paddingRight="5dp"
+        android:id="@+id/date_time_tv"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:text="@string/poetry_date"
+        android:background="#DFDCDC"
+        android:gravity="center_vertical|right"
+
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#DFDCDC"
+        android:layout_gravity="center_vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="Edit"
+            android:id="@+id/update_btn"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="Delete"
+            android:id="@+id/delete_btn"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"/>
+
+
+    </LinearLayout>
+
+
+
+<!-- I Used this View becouse of The match parent attribute not-->
+<!--    working properly in android:id="@+id/poetryData_tv" its extending as long as the Poetry lenth and with
+this view attribute its work fine-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/white"
+        />
+
+
+
+</LinearLayout>
